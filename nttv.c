@@ -235,7 +235,7 @@ double *integrator(double *state, double *mu, double *tbounds)
 	            seteq(yhone, y);
 	            thone = t;
 	            
-	            /* WHY THE HELL IS THERE A FOR LOOP HERE? */
+	            /* WHY IS THERE A FOR LOOP HERE? */
 	            for(i=0; i<5; i++) {
 	                func (thone, yhone, dydt, mu);
 	                ddpdt = dydt[0+pl*6]*dydt[0+pl*6] + dydt[1+pl*6]*dydt[1+pl*6] 
@@ -289,7 +289,7 @@ double *integrator(double *state, double *mu, double *tbounds)
 	            seteq(yhone, y);
 	            thone = t;	        
 
-	            /* WHY THE HELL IS THERE A FOR LOOP HERE? */
+	            /* WHY IS THERE A FOR LOOP HERE? */
 	            for(i=0; i<5; i++) {
                     func (thone, yhone, dydt, mu);
                     ddpdt = dydt[0+pl*6]*dydt[0+pl*6] + dydt[1+pl*6]*dydt[1+pl*6]
