@@ -316,7 +316,8 @@ double *integrator(double *state, double *mu, double *tbounds)
     gsl_odeiv_evolve_free(e);
     gsl_odeiv_control_free(c);
     gsl_odeiv_step_free(s);
-
+	
+    /* dummy array to return -- I'll deal with returning the full array later */
     double *ret = malloc(6 * sizeof(double));
     
     ret[0] = 1;
